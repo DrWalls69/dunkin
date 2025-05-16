@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dunkin' México</title>
+        <link rel="icon" href="images/dona_lego.png" type="image/png">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/d3eba8ec8662173409b7229addecbf7a?family=Frankfurter+W02+Normal">
+        <link rel="stylesheet" href="https://use.typekit.net/vsl3mxx.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a967a7a00b.js" crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function()
+        {
+        $("a").on('click', function(event)
+        {
+        if (this.hash !== "")
+        {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate(
+                {
+                scrollTop: $(hash).offset().top
+                 }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <video id="panadero" autoplay muted loop>
+            <source src="assets/videos/mixkit-glazed-donuts-in-a-close-view-44097-full-hd.mp4" type="video/mp4">
+        </video>
+        <div class="contenedor">
+            <div class="cabeza">
+                <div class="identidad"></div>
+                <div class="navegacion">
+                    <ul>
+                        <li><a href="#historia">HISTORIA</a></li>
+                        <li><a href="#marca">NUESTRA MARCA</a></li>
+                        <li><a href="#ingredientes">INGREDIENTES</a></li>
+                        <li><a href="#galeria">DONAS</a></li>
+                        <li><a href="#pedidos">PEDIDOS</a></li>
+                    </ul>
+                </div>
+                <div class="main_flecha" id="menu">
+                    <div class="flecha">
+                        <a href="#menu"><i class="fa-solid fa-circle-arrow-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion_uno">
+                <span class="promo">
+                    <span class="dunkin">DUNKIN'</span><br>
+                    Cumplimos en México 25 años,<br>
+                    y lo celebramos con una promoción<br>
+                    en todas nuestras donas al<span class="bolder"> 2X1</span>
+                </span>
+                <span class="donas_recortadas">
+                    <div class="smoke">
+                    <span style="--i:1;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:9;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:7;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:6;"></span>
+                    <span style="--i:8;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:14;"></span>
+                </div>
+                </span>
+                <div class="seccion_uno_naranja">
+                    <span class="calidad">
+                        <span class="nombre">Dunkin'</span> se ha adaptado a las preferencias locales<br>
+                        y sigue siendo una opción popular para aquellos<br>
+                        que buscan disfrutar de donas y café de alta calidad.
+                    </span>
+                </div>
+            </div>
+            <div class="seccion_dos">
+                <span class="cumpleanos">
+                    <span class="imagen_cumpleanos"></span>
+                    <span class="eventos_bold">
+                    Cumpleaños <br></span>
+                    Puedes crear una torre<br>
+                    de donas en lugar de<br>
+                    un pastel tradicional<br>
+                    y festejar a lo grande.
+                </span>
+                <span class="infantiles">
+                    <span class="imagen_infantiles"></span>
+                    <span class="eventos_bold">
+                    Fiestas infantiles <br></span>
+                    Los niños adoran<br>
+                    las donas, y puedes<br>
+                    ofrecer una variedad<br>
+                    de sabores.
+                </span>
+                <span class="familiares">
+                    <span class="imagen_familiares"></span>
+                    <span class="eventos_bold">
+                    Fiestas familiares<br></span>
+                    Las donas son<br>
+                    un excelente postre<br>
+                    para compartir en<br>
+                    reuniones familiares.
+                </span>
+                <span class="baby">
+                    <span class="imagen_baby"></span>
+                    <span class="eventos_bold">
+                    Baby Showers<br></span>
+                    Las donas decoradas<br>
+                    pueden ser una opción<br>
+                    atractiva para celebrar<br>
+                    la llegada de un bebé.
+                </span>
+                <span class="festivos">
+                    <span class="imagen_festivos"></span>
+                    <span class="eventos_bold">
+                    Días festivos<br></span>
+                    Las donas decoradas<br>
+                    con motivos navideños<br>
+                    o de Halloween son<br>
+                    siempre un éxito.
+                </span>
+            </div>
+            <div class="seccion_tres" id="historia">
+                <span class="origenes">
+                    <img src="images/imagen_origenes.png" alt="origenes">
+                    <h2>Los Orígenes Dunkin'</h2><br>
+                    <p>En 1948, William Rosenberg y Stephen So abrieron su primer restaurante, llamado Open Kettle, en Quincy, Massachusetts, al cual posteriormente re-nombraron como Dunkin' Donuts en 1950.<br><br>
+                        En 1990 fue adquirida por Allied Lyons, que poco antes había comprado a su competidora Mister Donut. En 2004, la sede de la empresa se trasladó a Cantón. En 2010, las ventas de todo 
+                        el sistema mundial de Dunkin' Donuts fueron de seis mil millones de dólares.<br><br>
+                        Dunkin' Donuts, junto con Baskin Robbins, es copropiedad de Dunkin' Brands, Inc. Dunkin' Brands también era propietario de la franquicia Togo, pero la vendió a finales 
+                        de 2007 a una empresa de capital privado.</p></span>      
+                <span class="origenes_dos">
+                    <img src="images/imagen_origrnes_01.png" alt="restaurante">
+                    <p>En 2005 Allied Domecq pasó a ser propiedad de la empresa de bebidas Pernod Ricard, que se vendieron a un consorcio de tres firmas de capital privado. En 2018 se anuncia el cambio de nombre a Dunkin', eliminando la palabra «donuts» de su nombre.</p>
+                    <img class="otro_margen" src="assets/logo_dnkn_origenes.svg" alt="dnkn" height="180px">
+                    <img src="images/imagen_origrnes_2_a.png" alt="restaurante">
+                </span>
+            </div>
+            <div class="seccion_cuatro" id="marca">
+                <h2>Dunkin' evoluciona</h2>
+                <div class="evolucion_uno">
+                    <img src="assets/logo_dunkin_origenes_01.svg" alt="logo_dnkn_origenes">
+                    <p>Inicialmente, el logotipo tenía<br>
+                        un diseño diferente al actual.<br>
+                        El color marrón rojizo intenso<br>
+                        y la caligrafía reflejaban la<br>
+                        época y el ambiente<br>
+                        de cafetería del Dunkin' Donuts<br>
+                        original, antes de que<br>
+                        abandonara los vasos<br>
+                        de cerámica y la experiencia<br>
+                        de comer en el local.</p>
+                </div>
+                <div class="evolucion_dos">
+                    <img src="assets/logo_dunkin_origenes_02.svg" alt="logo_dunkin_origenes_02">
+                    <p>Uno de los dos colores ahora famosos del logotipo de Dunkin Donuts debutó en la década de 1960. Este color, llamado "Powdered Candy", aún se puede encontrar en el logotipo actual. Con la taza de café y el nombre circular de la marca en la parte superior, el logotipo representaba los dos productos por los que eran más famosos: las donas y el café.</p>
+                </div>
+                <div class="evolucion_tres">
+                    <img src="assets/logo_dunkin_origenes_03.svg" alt="logo_dunkin_origenes_03">
+                    <p>En 1976 se solicitó un nuevo rediseño completo del logotipo de Dunkin Donuts, pero este se mantendría, en cierta medida, hasta la fecha. Con la introducción de la famosa 
+                        paleta de colores naranja y rosa, y las letras regordetas, 
+                        se concibió el ahora icónico logotipo. Los colores de la marca tienen tonos dulces, 
+                        ¡y la tipografía casi parece hecha de donas!</p>
+                </div>
+                <div class="evolucion_cuatro">
+                    <img src="assets/logo_dunkin_origenes_04.svg" alt="logo_dunkin_origenes_04">
+                    <p>Este logotipo de Dunkin' Donuts presentaba la misma tipografía y paleta de colores, pero con el emblema de la taza de café. Esto impulsó el sector cafetero de su negocio, y el nuevo eslogan de Dunkin' Donut, "America Runs on Dunkin", les permitió expandirse aún más en el mercado del café. El vapor indica que su café siempre se sirve caliente.</p>
+                </div>
+                <div class="evolucion_cinco">
+                    <img src="assets/logo_dunkin_origenes_05.svg" alt="logo_dunkin_origenes_05">
+                    <p>Este pequeño rediseño del logotipo resaltó la taza de café en marrón para aclarar que, de hecho, era café y pulió el emblema con una combinación 50/50 de naranja y rosa. Aquí también fue donde se introdujo por primera vez el logotipo DD. El logotipo "DD", alternativo y más pequeño, se puede encontrar en muchas de sus sucursales, así como en artículos específicos, como su tarjeta negra.</p>
+                </div>
+                <div class="evolucion_seis">
+                        <li>1950</li>
+                        <li>1960</li>
+                        <li>1976</li>
+                        <li>2002</li>
+                        <li>2007</li>
+                </div>
+                <div class="evolucion_siete">
+                    <span class="anio">2019</span>
+                </div>
+                <div class="evolucion_ocho">
+                    <img src="assets/logo_dunkin_origenes_06.svg" alt="logo_dunkin_origenes_06">
+                </div>
+                <div class="evolucion_nueve">
+                    <p>Esta última versión representa<br>
+                        otra diferencia con respecto<br>
+                        a la versión anterior. Si bien<br> 
+                        conserva la misma tipografía<br>
+                        y paleta de colores,<br>
+                        la eliminación del emblema<br>
+                        de la taza de café y la palabra<br>
+                        "donuts" del logotipo (así como<br>
+                        del nombre oficial) permite<br>
+                        una interpretación más amplia<br>
+                        y permite a Dunkin' explorar<br>
+                        otras vías para el desarrollo<br>
+                        de su marca.</p>
+                </div>
+                <div class="evolucion_diez"></div>
+            </div>
+            <div class="video_dunkin">
+                <video id="video_vasos" loop muted autoplay>
+                    <source src="assets/videos/14_CupShow_NoLocal.mp4" type="video/mp4" width="1440px">
+                </video>
+                <span class="texto_over_video">
+                    Para DNKN<br>¡Menos es siempre más!
+                </span>
+            </div>
+            <div class="seccion_cinco" id="ingredientes">
+                <div class="imagen_blur"></div>
+                <h2>¡Así las hacemos!</h2>
+                <div class="dona_01">
+                    <img src="images/ingredientes_harina.png" alt="ingredientes_harina">
+                    <h3>Harina de trigo</h3> 
+                    <p>Es la base de<br>la masa.</p>
+                </div>
+                <div class="dona_02">
+                    <img src="images/ingredientes_azucar.png" alt="ingredientes_azucar">
+                    <h3>Azúcar</h3><p>Para darle dulzura<br>a la masa.</p>
+                </div>
+                <div class="dona_03">
+                    <img src="images/ingredientes_levadura.png" alt="ingredientes_levadura">
+                    <h3>Levadura</h3><p>Para ayudar<br>a que la masa suba<br>y sea esponjosa.</p>
+                </div>
+                <div class="dona_04">
+                    <img src="images/ingredientes_mantequilla.png" alt="ingredientes_mantequilla">
+                    <h3>Mantequilla</h3><p>Para darle suavidad<br>y sabor a la masa.</p>
+                </div>
+                <div class="dona_05">
+                    <img src="images/ingredientes_huevo.png" alt="ingredientes_huevo">
+                    <h3>Huevo</h3><p>Para enriquecer<br>la masa y darle estructura.</p>
+                </div>
+                <div class="dona_06">
+                    <img src="images/ingredientes_vainilla.png" alt="ingredientes_vainilla">
+                    <h3>Vainilla</h3><p>Para añadir<br>un toque de sabor.</p>
+                </div>
+                <div class="dona_07">
+                    <img src="images/ingredientes_leche.png" alt="ingredientes_leche">
+                    <h3>Leche</h3><p>Para hidratar<br>la masa y darle<br>una textura suave.</p>
+                </div>
+                <div class="dona_08">
+                    <img src="images/ingredientes_chocolate.png" alt="ingredientes_chocolate">
+                    <h3>Chocolate</h3>
+                </div>
+                <div class="dona_09">
+                    <img src="images/ingredientes_glaceado.png" alt="ingredientes_glaceado">
+                    <h3>Glaseado</h3>
+                </div>
+                <div class="dona_10">
+                    <img src="images/ingredientes_granillo.png" alt="ingredientes_granillo">
+                    <h3>Granillo</h3>
+                </div>
+                <div class="dona_11">
+                    <img src="images/ingredientes_mermelada.png" alt="ingredientes_mermelada">
+                    <h3>Mermelada</h3>
+                </div>
+            </div>
+            <div class="seccion_seis" id="galeria">
+                <h2>Conoce nuestros deliciosos sabores</h2>
+                <div class="envolvente">
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_01.png" alt="galeria_01">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Chocolate con granillo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_02.png" alt="galeria_02">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Menta con granillo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_03.png" alt="galeria_03">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Lavanda con granillo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_04.png" alt="galeria_04">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Glaceada con dulce<br>de leche</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_05.png" alt="galeria_05">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Fresa con frutas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_06.png" alt="galeria_06">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Chocolate y azúcar</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_07.png" alt="galeria_07">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Relleno pastelero</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_08.png" alt="galeria_08">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Zanahoria glaceada</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_09.png" alt="galeria_09">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Rellena de chocolate</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_10.png" alt="galeria_10">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Azúcar y canela</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_11.png" alt="galeria_11">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Dona Unicornio</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_12.png" alt="galeria_12">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Dulce de leche<br>con nueces</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_13.png" alt="galeria_13">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Glaceada con dulce<br>de leche</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_14.png" alt="galeria_14">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Chocolate con nueces</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="tarjeta_adentro">
+                            <div class="tarjeta_frente">
+                                <img src="images/galeria_15.png" alt="galeria_15">
+                            </div>
+                            <div class="tarjeta_atras">
+                                <h3>Chococanela</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion_siete" id="pedidos">
+                <div class="wrapper_pedidos"></div>
+            </div>
+            <div class="rrss">
+                <div class="grid">
+                        <div class="col-left">
+                            <div class="box">
+                                <div class="inner-box">
+                                    <img src="images/facebook_dunkin-donuts.png" alt="facebook_dunkin-donuts"/></div>
+                                <div class="inner-box">
+                                    <img src="images/instagram_dunkin-donuts.png" alt="instagram_dunkin-donuts"/></div>
+                            </div>
+                            <div class="box">
+                                <div class="inner-box">
+                                    <img src="images/x_dunkin-donuts.png" alt="x_dunkin-donuts"/></div>
+                                <div class="inner-box">
+                                    <img src="images/linkedin_dunkin-donuts.png" alt="linkedin_dunkin-donuts"/></div>
+                            </div>
+                            <div class="box">
+                                <div class="inner-box">
+                                    <img src="images/snapchat_dunkin-donuts.png" alt="snapchat_dunkin-donuts"/></div>
+                                <div class="inner-box">
+                                    <img src="images/pinterest_dunkin-donuts.png" alt="pinterest_dunkin-donuts"/></div>
+                            </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="box">
+                            <video src="assets/videos/247148_small.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="box">
+                            <video src="assets/videos/14_CupShow_NoLocal.mp4" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="redes_logos">
+                    <h3>Conoce más de Dunkin en nuestras Redes Sociales</h3>
+                    <p>@dunkin_mx</p>
+                    <a href="https://www.tiktok.com/@dunkin" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/DunkinDonutsmx/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dunkin_mx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/dunkindonuts" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.snapchat.com/explore/dunkin" target="_blank"><i class="fa-brands fa-square-snapchat"></i></a>
+                    <a href="https://www.pinterest.com/dunkindonuts/" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
+                    <a href="https://www.linkedin.com/company/dunkin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <div class="ubicacion">
+                    <a href="https://maps.app.goo.gl/occaE2tTen5Js3PC8" target="_blank"><i class="fa-solid fa-location-dot fa-2xl" style="color: white;"></i></a>
+                    <h3>Ubica nuestras tiendas<br> en la CDMX</h3>
+                </div>
+                <div class="info">
+                    <p>Tu opinión es importante para nosotros. Si deseas contactar<br> a un representante de Atención al Cliente de Dunkin' sobre<br>
+                        una visita reciente a un restaurante o si tienes alguna opinión sobre los productos de nuestro menú, envíanos un correo electrónico o llámanos.
+                        Gracias por tu interés en contactar<br>con Dunkin', te compartimos nuestras redes sociales, correo electrónico y teléfono con WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
